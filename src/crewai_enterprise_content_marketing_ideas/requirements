@@ -1,5 +1,6 @@
 # Dependencies
 streamlit
+pysqlite3-patch
 pysqlite-binary==0.5.1.3380300 
 pysqlite3==0.5.2
 pysqlite3-binary
