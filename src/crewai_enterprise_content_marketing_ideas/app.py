@@ -1,5 +1,12 @@
 import streamlit as st
 
+try:
+    import pysqlite3 as sqlite3
+    import sys
+    sys.modules["sqlite3"] = sqlite3
+except ImportError:
+   st.error("Powered by Mila")
+
 import sys
 
 # Specify the path to your module
