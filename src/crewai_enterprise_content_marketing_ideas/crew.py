@@ -1,3 +1,5 @@
+import streamlit as st
+
 try:
     import pysqlite3 as sqlite3
     import sys
