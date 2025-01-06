@@ -1,6 +1,10 @@
 import streamlit as st
 from crewai_enterprise_content_marketing_ideas.crew import CrewaiEnterpriseContentMarketingCrew
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 st.title("Creative Content Generator for Mila")
 
 # User inputs
