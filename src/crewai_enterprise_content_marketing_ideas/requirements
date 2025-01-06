@@ -1,5 +1,6 @@
 # Dependencies
 streamlit
+pysqlite-binary
 pysqlite3-binary
 crewai
 pydantic = "^2.4.2"
