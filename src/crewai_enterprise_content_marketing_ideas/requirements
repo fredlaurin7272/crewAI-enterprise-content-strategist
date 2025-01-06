@@ -1,13 +1,9 @@
 # Dependencies
-streamlit
-pysqlite3-patch
-pysqlite-binary==0.5.1.3380300 
-pysqlite3==0.5.2
-pysqlite3-binary
 crewai
-pydantic = "^2.4.2"
-langchain = "^0.1.10"
-python-dotenv = "1.0.0"
-embedchain = "^0.1.98"
-appdirs = "^1.4.4"
-python-decouple = "^3.6"
+crewai[tools]
+streamlit
+chromadb
+pysqlite-binary
+pysqlite3-binary
+pysqlite3-patch
+
