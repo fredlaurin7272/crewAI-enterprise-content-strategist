@@ -1,10 +1,3 @@
-import chromadb
-
-client = chromadb.Client()
-collection = client.get_collection(name="chroma_docs")
-results = collection.get(ids=["page"])["documents"]
-print(results) # Not found []
-
 import streamlit as st
 from crewai_enterprise_content_marketing_ideas.crew import CrewaiEnterpriseContentMarketingCrew
 
