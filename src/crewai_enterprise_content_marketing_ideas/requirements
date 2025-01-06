@@ -1,5 +1,5 @@
 # Dependencies
-streamlit = "^1.13.0"
+streamlit
 pysqlite3-binary
 python = ">=3.10,<=3.13"
 pydantic = "^2.4.2"
