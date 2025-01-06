@@ -1,5 +1,3 @@
-import streamlit as st
-
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
@@ -14,6 +12,7 @@ if module_path not in sys.path:
 # Verify if the path was added (optional)
 print(module_path in sys.path)  # This should print True if added successfully
 
+import streamlit as st
 from crewai_enterprise_content_marketing_ideas.crew import CrewaiEnterpriseContentMarketingCrew
 
 st.title("Creative Content Generator for Mila")
