@@ -3,7 +3,5 @@ crewai
 crewai[tools]
 streamlit
 chromadb
-pysqlite-binary
-pysqlite3-binary
 pysqlite3-patch
 
