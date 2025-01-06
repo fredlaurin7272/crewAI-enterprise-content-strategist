@@ -1,17 +1,5 @@
 import streamlit as st
 
-try:
-    import pysqlite3 as sqlite3
-    import sys
-    sys.modules["sqlite3"] = sqlite3
-except ImportError:
-   st.error("Powered by Mila")
-
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
-
 # # # Specify the path to your module
 # # module_path = "C:/Users/Frederic Laurin/PycharmProjects/crewAI-enterprise-content-marketing-ideas-template-main/src"
 
