@@ -1,19 +1,28 @@
 import streamlit as st
+
+import sys
+
+# Specify the path to your module
+module_path = "C:/Users/Frederic Laurin/PycharmProjects/crewAI-enterprise-content-marketing-ideas-template-main/src"
+
+# Check if the path is already in sys.path
+if module_path not in sys.path:
+    sys.path.append(module_path)  # Add the path to sys.path
+
+# Verify if the path was added (optional)
+print(module_path in sys.path)  # This should print True if added successfully
+
 from crewai_enterprise_content_marketing_ideas.crew import CrewaiEnterpriseContentMarketingCrew
 
-def main():
-    st.title("Creative Content Generator for Mila")
+st.title("Creative Content Generator for Mila")
 
-    # User inputs
-    topic = st.text_input("Enter Topic:", "AI for Science")
-    company = st.text_input("Enter Company:", "Mila Quebec AI Institute")
+# User inputs
+topic = st.text_input("Enter Topic:", "AI for Science")
+company = st.text_input("Enter Company:", "Mila Quebec AI Institute")
 
-    if st.button("Run"):
-        inputs = {"topic": topic, "company": company}
-        crew = CrewaiEnterpriseContentMarketingCrew()
-        result = crew.crew().kickoff(inputs=inputs)
-        st.write(result)  # Display results
+if st.button("Run"):
+    inputs = {"topic": topic, "company": company}
+    crew = CrewaiEnterpriseContentMarketingCrew()
+    result = crew.crew().kickoff(inputs=inputs)
+    st.write(result.raw)  # Display results
 
-
-if __name__ == "__main__":
-    main()
