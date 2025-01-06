@@ -1,4 +1,5 @@
 streamlit
-chromadb>=0.3.0
 crewai
+chromadb>=0.3.0
+pysqlite3
 pysqlite3-binary
