@@ -1,14 +1,9 @@
-import streamlit as st
+import chromadb
 
-# # # Specify the path to your module
-# # module_path = "C:/Users/Frederic Laurin/PycharmProjects/crewAI-enterprise-content-marketing-ideas-template-main/src"
-
-# # # Check if the path is already in sys.path
-# # if module_path not in sys.path:
-# #     sys.path.append(module_path)  # Add the path to sys.path
-
-# # # Verify if the path was added (optional)
-# # print(module_path in sys.path)  # This should print True if added successfully
+client = chromadb.Client()
+collection = client.get_collection(name="chroma_docs")
+results = collection.get(ids=["page"])["documents"]
+print(results) # Not found []
 
 import streamlit as st
 from crewai_enterprise_content_marketing_ideas.crew import CrewaiEnterpriseContentMarketingCrew
