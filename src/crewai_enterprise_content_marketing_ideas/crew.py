@@ -1,5 +1,8 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Uncomment the following line to use an example of a custom tool
 # from crewai_enterprise_content_marketing_ideas.tools.custom_tool import MyCustomTool
