@@ -1,6 +1,6 @@
 # Dependencies
-crewai==0.74.0
-crewai[tools]
+crewai==0.74.2
+crewai-tools==0.13.2
 streamlit
 chromadb
 pysqlite3-patch
