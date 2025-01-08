@@ -1,5 +1,5 @@
 # Dependencies
-crewai
+crewai==0.74.0
 crewai[tools]
 streamlit
 chromadb
